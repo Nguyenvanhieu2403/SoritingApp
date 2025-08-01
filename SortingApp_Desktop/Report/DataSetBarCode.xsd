@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBarCode" targetNamespace="http://tempuri.org/DataSetBarCode.xsd" xmlns:mstns="http://tempuri.org/DataSetBarCode.xsd" xmlns="http://tempuri.org/DataSetBarCode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBarCode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetBarCode" msprop:Generator_DataSetName="DataSetBarCode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BarCode" msprop:Generator_RowEvHandlerName="BarCodeRowChangeEventHandler" msprop:Generator_RowDeletedName="BarCodeRowDeleted" msprop:Generator_RowDeletingName="BarCodeRowDeleting" msprop:Generator_RowEvArgName="BarCodeRowChangeEvent" msprop:Generator_TablePropName="BarCode" msprop:Generator_RowChangedName="BarCodeRowChanged" msprop:Generator_RowChangingName="BarCodeRowChanging" msprop:Generator_TableClassName="BarCodeDataTable" msprop:Generator_RowClassName="BarCodeRow" msprop:Generator_TableVarName="tableBarCode" msprop:Generator_UserTableName="BarCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_UserColumnName="BarCode" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

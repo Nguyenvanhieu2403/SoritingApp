@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" TextQuality="Regular" ReportInfo.Name="Simple List" ReportInfo.Author="Fast Reports Inc" ReportInfo.Description="Demonstrates a simple list report. To create it:&#13;&#10;- go to &quot;Data&quot; menu and select &quot;Choose Report Data...&quot; item to select a datasource;&#13;&#10;- go to &quot;Report|Configure Bands...&quot; menu to create the band structure;&#13;&#10;- return to the report page, doubleclick the data band to show its editor;&#13;&#10;- choose the datasource;&#13;&#10;- drag data from the Data Dictionary window to the band." ReportInfo.Created="01/17/2008 03:05:57" ReportInfo.Modified="07/24/2025 14:31:34" ReportInfo.CreatorVersion="2025.2.6.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqxfki+t8jnSxof6qn6ng9vQ59+olFTgC0D1e6SW+L3uuc0CXnPrXyUauKpzLVR+aPxkM0SjZTcoSw1g6XyVf/YPdmc5WEkynzUGQyZk5ajyF3Wn2yJuKAMPtsTuFHg5hJD/fITz1JYO8auMAVLPdskQ0jZ2oweHLjsfE1xIHDCgqpkBxbT+48ybXeM9yNH1Pq1UJpvTiCeKhTnne76pg8dMInx/NhDdnkgarLI7/OaJ8=">
+      <TableDataSource Name="Cms_Bag" DataType="System.Int32" Enabled="true" TableName="Cms.&quot;Bag&quot;">
+        <Column Name="Id" DataType="System.Int32"/>
+        <Column Name="BagNumber" DataType="System.String"/>
+        <Column Name="MailNumber" DataType="System.String"/>
+        <Column Name="ItemCode" DataType="System.String"/>
+        <Column Name="BagWeight" DataType="System.Decimal"/>
+        <Column Name="ItemWeight" DataType="System.Decimal"/>
+        <Column Name="ShellWeight" DataType="System.Decimal"/>
+        <Column Name="BD8" DataType="System.String"/>
+        <Column Name="CreateDate" DataType="System.DateTime"/>
+        <Column Name="Modified" DataType="System.DateTime"/>
+        <Column Name="CreateDate_BD8" DataType="System.DateTime"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <Parameter Name="MailNumber" DataType="System.String" AsString=""/>
+    <Parameter Name="CreateDate_BD8" DataType="System.String" AsString=""/>
+    <Parameter Name="BagNumber" DataType="System.String" AsString=""/>
+    <Parameter Name="BagWeight" DataType="System.String" AsString=""/>
+    <Parameter Name="ServiceCode" DataType="System.String" AsString=""/>
+    <Parameter Name="OriginalPost" DataType="System.String" AsString=""/>
+    <Parameter Name="DestinationPosCode" DataType="System.String" AsString=""/>
+    <Parameter Name="ProvinceCode" DataType="System.String" AsString=""/>
+    <Parameter Name="DistrictCode" DataType="System.String" AsString=""/>
+    <Parameter Name="BD8Code" DataType="System.String" AsString=""/>
+    <Parameter Name="Note" DataType="System.String" AsString=""/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="718.2" Height="519.75" Border.Lines="All" Border.Color="Maroon" CanGrow="true">
+      <TextObject Name="Text1" Left="18.9" Top="18.9" Width="113.4" Height="18.9" Text="Số chuyến thư" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="18.9" Top="56.7" Width="113.4" Height="18.9" Text="Ngày đóng chuyến thư" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="18.9" Top="122.85" Width="113.4" Height="18.9" Text="Túi số" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="18.9" Top="170.1" Width="113.4" Height="18.9" Text="Khối lượng (kg)" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="18.9" Top="245.7" Width="141.75" Height="18.9" Text="Túi số/Tổng số túi/SH lô" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="18.9" Top="283.5" Width="141.75" Height="18.9" Text="Ghi chú" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="132.3" Top="18.9" Width="94.5" Height="18.9" Text="[MailNumber]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text10" Left="47.25" Top="94.5" Width="141.75" Height="18.9" Text="[CreateDate_BD8]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text11" Left="103.95" Top="122.85" Width="94.5" Height="18.9" Text="[BagNumber]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text12" Left="47.25" Top="207.9" Width="141.75" Height="18.9" Text="[BagWeight]" Font="Arial, 10pt"/>
+      <PictureObject Name="Picture1" Left="283.5" Top="18.9" Width="47.25" Height="37.8" ImageLocation="E:\VNPostCode\address-lookup-after-conversion-extension\icon.png" ImageFormat="Png"/>
+      <TextObject Name="Text13" Left="349.65" Top="18.9" Width="217.35" Height="18.9" Text="BƯU ĐIỆN VIỆT NAM" Font="Arial, 14pt"/>
+      <TextObject Name="Text14" Left="359.1" Top="47.25" Width="94.5" Height="18.9" Text="[ServiceCode]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text15" Left="491.4" Top="47.25" Width="37.8" Height="18.9" Text="BD8" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text16" Left="283.5" Top="94.5" Width="321.3" Height="18.9" Text="BƯU CỤC ĐÓNG CHUYẾN THƯ" Font="Arial, 14pt"/>
+      <TextObject Name="Text17" Left="321.3" Top="132.3" Width="255.15" Height="18.9" Text="[OriginalPost]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold"/>
+      <TextObject Name="Text18" Left="283.5" Top="170.1" Width="321.3" Height="18.9" Text="BƯU CỤC ĐÓNG CHUYẾN THƯ" Font="Arial, 14pt"/>
+      <TextObject Name="Text19" Left="321.3" Top="198.45" Width="255.15" Height="18.9" Text="[DestinationPosCode]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold"/>
+      <TextObject Name="Text20" Left="321.3" Top="255.15" Width="255.15" Height="18.9" Text="[ProvinceCode]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold"/>
+      <TextObject Name="Text21" Left="321.3" Top="226.8" Width="255.15" Height="18.9" Text="[DistrictCode]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold"/>
+      <BarcodeObject Name="Barcode1" Left="37.8" Top="321.3" Width="486.2" Height="103.95" AutoSize="false" Text="[BD8Code]" AllowExpressions="true" Barcode="Code128" Barcode.AutoEncode="true"/>
+      <LineObject Name="Line1" Top="453.6" Height="-453.6"/>
+      <LineObject Name="Line2" Top="453.6" Width="604.8"/>
+      <LineObject Name="Line3" Left="604.8" Top="453.6" Height="-453.6"/>
+      <LineObject Name="Line4" Left="604.8" Width="-604.8"/>
+      <LineObject Name="Line5" Top="264.6" Height="9.45"/>
+      <LineObject Name="Line6" Top="274.05" Width="604.8"/>
+      <LineObject Name="Line7" Top="311.85" Width="604.8"/>
+      <LineObject Name="Line8" Left="264.6" Height="274.05"/>
+      <LineObject Name="Line9" Top="226.8" Width="264.6"/>
+      <LineObject Name="Line10" Top="151.2" Width="264.6"/>
+      <LineObject Name="Line11" Top="113.4" Width="264.6"/>
+      <LineObject Name="Line12" Left="264.6" Top="160.65" Width="340.2"/>
+      <LineObject Name="Line13" Top="37.8" Width="264.6"/>
+      <TextObject Name="Text22" Left="207.9" Top="122.85" Width="47.25" Height="18.9" Text="(F)" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text23" Left="179.55" Top="283.5" Width="396.9" Height="18.9" Text="[Note]" Font="Arial, 10pt"/>
+      <Sort>
+        <Sort Expression="[Employees.FirstName]"/>
+        <Sort Expression="[Employees.LastName]"/>
+      </Sort>
+    </DataBand>
+  </ReportPage>
+</Report>
